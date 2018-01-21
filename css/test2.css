@@ -1,11 +1,11 @@
 *{margin:0; padding:0;}
 @font-face {
     font-family: 'iconfont';  /* project id 414745 */
-    src: url('//at.alicdn.com/t/font_414745_frdlsd7emij7zaor.eot');
-    src: url('//at.alicdn.com/t/font_414745_frdlsd7emij7zaor.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_414745_frdlsd7emij7zaor.woff') format('woff'),
-    url('//at.alicdn.com/t/font_414745_frdlsd7emij7zaor.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_414745_frdlsd7emij7zaor.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_414745_i57cmcit3cxcrf6r.eot');
+    src: url('//at.alicdn.com/t/font_414745_i57cmcit3cxcrf6r.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_414745_i57cmcit3cxcrf6r.woff') format('woff'),
+    url('//at.alicdn.com/t/font_414745_i57cmcit3cxcrf6r.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_414745_i57cmcit3cxcrf6r.svg#iconfont') format('svg');
 }
 body{
     padding:0;
@@ -39,7 +39,7 @@ body{
 #myCarousel .right a:hover{text-decoration:none;}
 #speaker ul{float:left}
 #speaker li{list-style-type: none;float:left;}
-.speakers_area { /* padding: 0 10px; */}
+.speakers_area {margin: 4em 0}
 .speakers_area h2 {
     /* background: #f0f0f0 url(../images/bgr_speakers_area.png) no-repeat 10px 13px; */
     font-size: 2em;margin-top: 12px;color: #333;
@@ -65,6 +65,14 @@ body{
 .item_content_text p {font-size:16px;color:#fff;line-height:21px;text-align:center;}
 .images_item:hover .item_content_area {visibility:visible;opacity:1;}
 
+/*----ticket----*/
+#ticket .early-bird{height:400px;width: 250px;box-shadow: 10px 10px 5px #888888;background: #942a25;-webkit-filter: grayscale(10%); /* Chrome, Safari, Opera */filter: grayscale(10%);}
+#ticket .early-bird:hover{margin-top: -1.5em}
+.ticket{padding-left: 8em;height : auto;margin:4em 0}
+.ticket .early-bird p{color:#ffffff;padding-left: 1.5em;padding-top:1.5em;font-size:1.2em;border-bottom: 3px solid white}
+.ticket .early-bird h1{color: #ffffff;text-align: center;font-size:3em;margin-bottom: 3em;margin-top: 1em}
+.ticket .early-bird a{color: #ffffff;text-decoration:none;border: 2px solid #ffffff;border-radius:10%;padding: 1em 1.5em;margin-left: 62px;font-family:"iconfont" !important;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.5px;-moz-osx-font-smoothing: grayscale;}
+.ticket .early-bird a:hover{background-color: #ffffff;color: #000000}
 /*----topic----*/
 .line{position:relative;width:40px;height:40px;float: left;margin-left: 1.2em;margin-top: 0.5em;box-sizing:border-box;line-height:100px;text-indent:5px;background:linear-gradient(45deg, transparent 30%, #CC0000, #CC0000,transparent 45%);}
 .feature{margin:0 auto;background-color:#ffffff;height:auto;width:90%;zoom:1;overflow:hidden;margin-top: 2em;}
@@ -166,6 +174,16 @@ hr{height:1px;border:none;border-top:1px dashed #000000;width:90%;margin: 0 auto
     .feature1 .card1-text p{font-size: 2px}
     .triangle_border_left{border-width:10px 10px 10px 0;border-color:transparent #CC0000 transparent transparent;/*透明 灰 透明 透明 */float: left;margin-left: -0.6em;margin-top: 1.5em;position:relative;}
 
+    /*----ticket-----*/
+    .section-header {
+        padding-left: 0.6rem;
+        margin-left: 0.15rem;
+    }
+    .flex-4 {
+        width: 1.65rem;
+        float: left;
+        margin: 0.06rem;
+    }
 
     #pictures3{display: none}
     .picture{min-width: 400px;max-width: 500px;max-height: 280px;width: 40%;}

@@ -1,11 +1,11 @@
 *{margin:0; padding:0;}
 @font-face {
-    font-family: 'iconfont';  /* project id 414745 */
-    src: url('//at.alicdn.com/t/font_414745_i57cmcit3cxcrf6r.eot');
-    src: url('//at.alicdn.com/t/font_414745_i57cmcit3cxcrf6r.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_414745_i57cmcit3cxcrf6r.woff') format('woff'),
-    url('//at.alicdn.com/t/font_414745_i57cmcit3cxcrf6r.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_414745_i57cmcit3cxcrf6r.svg#iconfont') format('svg');
+    font-family: 'iconfont';  /* project id 552706 */
+    src: url('//at.alicdn.com/t/font_552706_qikmu00yt0h5xw29.eot');
+    src: url('//at.alicdn.com/t/font_552706_qikmu00yt0h5xw29.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_552706_qikmu00yt0h5xw29.woff') format('woff'),
+    url('//at.alicdn.com/t/font_552706_qikmu00yt0h5xw29.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_552706_qikmu00yt0h5xw29.svg#iconfont') format('svg');
 }
 body{
     padding:0;
@@ -23,14 +23,19 @@ body{
 
 /*--header--*/
 #header img{width:200%;height: 200%}
-#header nav a{font-size: 1em;text-align: center;margin-top: 0.7em}
+#header nav a{font-size: 1em;text-align: center;margin-top: 0.7em;color: #ffffff}
+#header nav{background: rgb(251,48,50)}
+#header ul{padding-left: 10em}
+#header li{font-size: 1.1em;}
 
 /*---banner---*/
-.banner{padding-top: 40%;margin-top:70px;position: relative;background: url(../images/banner.jpg) no-repeat center center;background-size: 100% 100%;}
+.banner{padding-top: 44%;margin-top:55px;position: relative;background: url(../images/banner.jpg) no-repeat center center;background-size: 100% 100%;filter:  hue-rotate(20deg) sepia(50%) grayscale(10%)}
 .banner h1{margin-top: -12em;text-align: center;color: #ffffff;position: relative;float: top}
 
 /*--introduce--*/
-.introduce{margin:0 auto;width:80%;margin-top: 2em;margin-bottom: 2em;}
+.introduce{margin:0 auto;width:60%;margin-top: 2em;margin-bottom: 2em;}
+.introduce img{margin-left: 25%}
+.introduce a{font-size: 2em;color: #CC0000}
 .topic{}
 /*---speaker---*/
 #myCarousel .left a{ position:relative;margin-top: -6em;margin-left:-2em;text-decoration:none;float:left;color:#ffffff;font-size:50px;font-family:"iconfont" !important;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;}
@@ -66,43 +71,92 @@ body{
 .images_item:hover .item_content_area {visibility:visible;opacity:1;}
 
 /*----ticket----*/
-#ticket .early-bird{height:400px;width: 250px;box-shadow: 10px 10px 5px #888888;background: #942a25;-webkit-filter: grayscale(10%); /* Chrome, Safari, Opera */filter: grayscale(10%);}
+#ticket .early-bird{height:400px;width: 250px;box-shadow: 10px 10px 5px #888888;background: #9acfea;-webkit-filter: grayscale(10%); /* Chrome, Safari, Opera */filter: grayscale(10%);}
 #ticket .early-bird:hover{margin-top: -1.5em}
 .ticket{padding-left: 8em;height : auto;margin:4em 0}
-.ticket .early-bird p{color:#ffffff;padding-left: 1.5em;padding-top:1.5em;font-size:1.2em;border-bottom: 3px solid white}
-.ticket .early-bird h1{color: #ffffff;text-align: center;font-size:3em;margin-bottom: 3em;margin-top: 1em}
-.ticket .early-bird a{color: #ffffff;text-decoration:none;border: 2px solid #ffffff;border-radius:10%;padding: 1em 1.5em;margin-left: 62px;font-family:"iconfont" !important;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.5px;-moz-osx-font-smoothing: grayscale;}
-.ticket .early-bird a:hover{background-color: #ffffff;color: #000000}
-/*----topic----*/
-.line{position:relative;width:40px;height:40px;float: left;margin-left: 1.2em;margin-top: 0.5em;box-sizing:border-box;line-height:100px;text-indent:5px;background:linear-gradient(45deg, transparent 30%, #CC0000, #CC0000,transparent 45%);}
-.feature{margin:0 auto;background-color:#ffffff;height:auto;width:90%;zoom:1;overflow:hidden;margin-top: 2em;}
-.meeting_introduce{width:97%;margin: 0 auto;}
-.meeting_introduce h3{margin-bottom: 1em}
-.meeting_introduce h5{margin-bottom: 4em;color: rgb(98,98,98)}
-.feature .card{width:100%;margin: auto;color:#000000;height:auto;margin-bottom: 1.8em}
-.feature .card .card-body{height:100px;background: rgb(247,247,247);margin-top: -0.6em}
-.triangle_border_up{width:0;height:0;border-width:0 10px 10px;border-style:solid;border-color:transparent transparent rgb(247,247,247);/*透明 透明  灰*/;position:relative;margin-top:-0.6em;margin-right: 1.3em;float: right;}
-.feature .card .card-title{text-align: left;color: #761c19;padding-top: 0.6em;font-weight: bold}
-.feature .card .card-text{text-align: left;height: auto;font-size: 0.8em}
-.feature img{width:100%;height: 100%;}
-hr{height:1px;border:none;border-top:1px dashed #000000;width:90%;margin: 0 auto;margin-top: 2em}
+.ticket .early-bird p{color:#fff;padding-left: 1.5em;padding-top:1.5em;font-size:1.2em;border-bottom: 3px solid white}
+.ticket .early-bird h1{color: #fff;text-align: center;font-size:3em;margin-bottom: 3em;margin-top: 1em}
+.ticket .early-bird a{color: #fff;text-decoration:none;border: 2px solid #ffffff;border-radius:10%;padding: 1em 1.5em;margin-left: 62px;font-family:"iconfont" !important;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.5px;-moz-osx-font-smoothing: grayscale;}
+.ticket .early-bird a:hover{background-color: #fff;color: #9acfea}
 
-.feature1{margin:0 auto;background-color:#ffffff;height:auto;width:90%;zoom:1;overflow:hidden;margin-top: 2em;}
-.feature1 .card1{width: 48.5%;height:25%;background: rgb(247,247,247);float: left;position: relative}
-.feature1 .card2{width: 48.5%;height:25%;background: rgb(247,247,247);float: right;position: relative}
-.feature1 img{width:50%;height: 100%}
-.feature1 .card1-text{width:50%;height:50%;float: right;position: relative}
-.feature1 .card1-text span{color:#761c19;font-weight: bold;font-size: 1.1em;padding-left: 0.5em}
-.feature1 .card1-text p{font-size: 0.8em;padding-left: 0.5em;padding-top: 1em}
+/*----topic----*/
+
+.meeting_introduce{width:100%;margin: 0 auto;text-align: left;margin-top: -3em;margin-left: 3em}
+.meeting_introduce h3{margin-bottom: 1em;}
+.meeting_introduce p{margin-bottom: 4em;color: rgb(98,98,98);width: 90%;line-height: 3px}
+.meeting .mynav{width: 90%;margin: 0 auto;}
+.meeting .mynav .meeting1{transition:background 1s;background: #3C3C3C;text-align: center;color: #fff;border-top: 10px solid rgb(251,48,50);height: 150px;font-weight: bold;font-size: 19px}
+.meeting .mynav .meeting1:hover{background: rgb(251,48,50);color: #ffffff}
+.meeting .mynav .meeting2{transition:background 1s;background: #3C3C3C;text-align: center;color: #fff;border-top: 10px solid rgb(251,48,50);height: 150px;font-weight: bold;font-size:19px}
+.meeting .mynav .meeting2:hover{background: rgb(251,48,50);color: #ffffff}
+.meeting .mynav .meeting3{transition:background 1s;background: #3C3C3C;text-align: center;color: #fff;border-top: 10px solid rgb(251,48,50);height: 150px;font-weight: bold;font-size:19px}
+.meeting .mynav .meeting3:hover{background: rgb(251,48,50);color: #ffffff}
+.meeting .mynav .meeting4{transition:background 1s;background: #3C3C3C;text-align: center;color: #fff;border-top: 10px solid rgb(251,48,50);height: 150px;font-weight: bold;font-size:19px}
+.meeting .mynav .meeting4:hover{background: rgb(251,48,50);color: #ffffff}
+.meeting .mynav p{padding: 3em;margin-top: -10px}
+.arrow1{
+    width: 0px;
+    height:0px;
+    line-height: 0px;
+    border-width: 12px 12px 0;
+    border-style: solid dashed dashed dashed;
+    border-color: rgb(251,48,50);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    margin-top:13.2em;
+    margin-left:15em
+}
+
+.meeting #dahui1{display: block}
+.meeting #dahui2{display: none}
+.meeting #dahui3{display: none}
+.meeting #dahui4{display: none}
+
+.line{position:relative;width:40px;height:40px;margin-left:1em;margin-top: 3.5em;box-sizing:border-box;line-height:100px;text-indent:5px;background:linear-gradient(45deg, transparent 30%, #CC0000, #CC0000,transparent 45%);}
+.feature{margin:0 auto;background-color:#ffffff;height:auto;width:87.5%;zoom:1;overflow:hidden;margin-top: -2em;}
+.feature .card{width:100%;margin: auto;color:#000000;height:auto;margin-bottom: 1.8em}
+.feature .card .card-body{height:170px;background:#ffffff;margin-top: -0.6em}
+.triangle_border_up{width:0;height:0;border-width:0 10px 10px;border-style:solid;border-color:transparent transparent rgb(247,247,247);/*透明 透明  灰*/;position:relative;margin-top:-0em;margin-right: 1.3em;float: right;}
+.feature .card .card-title{text-align: center;color: #1b1b1b;padding-top:1.5em;font-weight: bold;padding-left: 0.6em}
+.feature .card .card-text{text-align: left;height: auto;font-size: 0.8em;padding-left: 0.8em}
+.feature img{width:100%;height: 100%;}
+.feature .icon-img{height: 100px;width: 100px;border: none}
+.feature .icon-img img{width:100%;height: 100%;filter: blur(3px);}
+.feature .icon-img1{border-radius:50%;height: 100px;width: 100px;position:relative;font-size: 4em;text-align: center;color: #fff;background:#64A600;padding-top: 0.3em;margin:0 auto}
+.feature .icon-img2{border-radius:50%;height: 100px;width: 100px;position:relative;font-size: 4em;text-align: center;color: #fff;background:#FF8040;padding-top: 0.3em;margin:0 auto}
+.feature .icon-img3{border-radius:50%;height: 100px;width: 100px;position:relative;font-size: 4em;text-align: center;color: #fff;background:#46A3FF;padding-top: 0.3em;margin:0 auto}
+.feature .icon-img4{border-radius:50%;height: 100px;width: 100px;position:relative;font-size: 4em;text-align: center;color: #fff;background:#ce8483;padding-top: 0.3em;margin:0 auto}
+
+.feature .icon-img p{position:relative;font-size: 9em;text-align: center;color: #CC0000;background:#dddddd}
+
+hr{height:1px;border:none;border-top:1px dashed #fff;width:90%;margin: 0 auto;margin-top: 2em;}
+
+.feature1{margin:0 auto;background-color:#ffffff;height:auto;width:90%;zoom:1;overflow:hidden;margin-top: 4em;}
+.feature1 .card1{width: 48.5%;height:25%;float: left;position: relative}
+.feature1 .card2{width: 48.5%;height:25%;float: right;position: relative}
+.feature1 .card1-text{width:48%;height:50%;float: right;position: relative;background: rgb(247,247,247);margin-top: -10em;padding-left:-1em}
+.feature1 .card1-text span{color:#761c19;font-weight: bold;font-size: 1.1em;padding-left: 0.5em;padding-top: -3em}
+.feature1 .card1-text p{font-size: 0.85em;padding-left: 0.5em;padding-top: 1em}
+.feature1 .icon-img{width:50%;height: 100%;}
+.feature1 .icon-img img{width:100%;height: 105%;filter: blur(3px);}
+.feature1 .icon-img p{position:relative;font-size:8em;text-align: center;color: #fff;margin-top: -160px}
 .triangle_border_left{width:0;height:0;border-width:10px 10px 10px 0;border-style:solid;border-color:transparent rgb(247,247,247) transparent transparent;/*透明 灰 透明 透明 */float: left;margin-left: -0.6em;margin-top: 1.5em;position:relative;}
 
+/*----map & address---*/
+.location .address li{list-style-type: none;line-height: 2em}
+.location .address{width: 80%;margin-left: 5em}
+.location .address img{width:40%;margin-left: 6em}
+.location .map{width:518px;height:410px;border:#ccc solid 1px;margin-left:3em;display:block}
+
 /*---sponsor---*/
+#sponsor{margin-bottom: 8em}
 .sponsors {width: 90%;padding-left: 3em}
 .sponsors .sponsor-title{margin-top: 2em}
-.sponsors .sponsor-title span{font-size: 2em;color:#000000;letter-spacing: 3px;margin-left: 0.5em}
-.sponsors .sponsor-title p{font-size: 1em;color:#dddddd;letter-spacing: 3px;margin-left: 3em}
+.sponsors .sponsor-title span{font-size: 1.5em;color:#000000;letter-spacing: 3px;margin-left: 0.5em}
+.sponsors .sponsor-title p{font-size: 1em;color:#dddddd;letter-spacing: 3px;margin-left: 2.5em}
 .sponsors .sponsor-title .line1{position:relative;width:10px;height:60px;float: left;margin-left: 1.2em;box-sizing:border-box;line-height:100px;text-indent:5px;background:linear-gradient(#CC0000, #ffffff)}
-.sponsors .sponsor{margin-top: 1em;padding-left: 8em;height:200px}
+.sponsors .sponsor{margin-bottom: 3em;padding-left: 8em;height:auto}
+.sponsors .sponsor li{list-style-type: none;line-height: 2em;font-size: 1.2em}
 .sponsors .sponsor img{width:100%;height: 100%}
 
 
@@ -158,32 +212,36 @@ hr{height:1px;border:none;border-top:1px dashed #000000;width:90%;margin: 0 auto
 
 
 @media (max-width: 767px){
-     #header img{width:80%;height: 80%;margin-top: 0.5em}
-    .introduce{font-size: 0.7em}
+    #header ul{padding-left: 0em}
+     #header img{width:20%;height: 20%;margin-top: 0.5em}
+    .introduce{font-size: 0.7em;width: 80%}
+    .introduce img{margin-left: 5%;width: 80%;height: 80%;}
     .images_item {width: 50% !important;}
     .speakers_area h2 {padding: 10px 15px 10px 45px !important;font-size: 20px !important}
     /*---card---*/
-    .card-text{font-size: smaller}
-    .card-title{font-size: 1em}
+    .meeting .mynav .meeting1{border-top: 8px solid rgb(251,48,50);height: 100px;font-weight: bold;font-size:13px;margin-top: 1em}
+    .meeting .mynav .meeting2{border-top: 8px solid rgb(251,48,50);height: 100px;font-weight: bold;font-size:13px;margin-top: 1em}
+    .meeting .mynav .meeting3{border-top: 8px solid rgb(251,48,50);height: 100px;font-weight: bold;font-size:13px;margin-top: 1em}
+    .meeting .mynav .meeting4{border-top: 8px solid rgb(251,48,50);height: 100px;font-weight: bold;font-size:13px;margin-top: 1em}
+
     .feature1{width:93%;}
     .feature1 .card1{width: 100%;height:50%;}
     .feature1 .card2{width: 100%;height:50%;margin-top: 2em}
     .feature1 img{width:50%;height: 60%}
-    .feature1 .card1-text{height: 100%;overflow: hidden}
+    .feature1 .card1-text{height: 120px;overflow: hidden;margin-top: -7em;}
     .feature1 .card1-text span{font-size: 0.8em}
-    .feature1 .card1-text p{font-size: 2px}
+    .feature1 .card1-text p{font-size: 2px;overflow: visible}
     .triangle_border_left{border-width:10px 10px 10px 0;border-color:transparent #CC0000 transparent transparent;/*透明 灰 透明 透明 */float: left;margin-left: -0.6em;margin-top: 1.5em;position:relative;}
-
+    .feature .icon-img p{position:relative;font-size: 4.6em;text-align: center;color: #fff;margin-top: -80px}
+    .feature1 .icon-img p{position:relative;font-size:4.5em;text-align: center;color: #fff;margin-top: -95px}
     /*----ticket-----*/
-    .section-header {
-        padding-left: 0.6rem;
-        margin-left: 0.15rem;
-    }
-    .flex-4 {
-        width: 1.65rem;
-        float: left;
-        margin: 0.06rem;
-    }
+    #ticket .early-bird{height:170px;width: 110px;}
+    #ticket .early-bird:hover{margin-top: -1.5em}
+    .ticket{padding-left: 0em}
+    .ticket .early-bird p{padding-left: 1.5em;padding-top:1.5em;font-size:0.5em;border-bottom: 3px solid white}
+    .ticket .early-bird h1{font-size:2em;margin-bottom: 0em;margin-bottom: 0.5em}
+    .ticket .early-bird a{border: 2px solid #fff;font-size:0.5em;border-radius:10%;margin-left: 10px;padding: 0.5em 1em;font-family:"iconfont" !important;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.5px;-moz-osx-font-smoothing: grayscale;}
+    .ticket .early-bird a:hover{background-color: #ffffff;color: #000000}
 
     #pictures3{display: none}
     .picture{min-width: 400px;max-width: 500px;max-height: 280px;width: 40%;}
@@ -206,12 +264,17 @@ hr{height:1px;border:none;border-top:1px dashed #000000;width:90%;margin: 0 auto
     .feature .card .card-text{font-size: 0.6em}
     hr{width: 100%}
     .triangle_border_up{border-width:0 5px 5px;margin-top:-0.27em;margin-right: 0.85em;}
+    /*----location----*/
+    .location .address{width: 80%;margin-left: 2em}
+    .location .map{width:320px;height:210px;border:#ccc solid 1px;margin-left: 0em}
     /*----sponsor----*/
+    #sponsor{margin-bottom: 5em}
     .sponsors {width: 100%;padding-left: 1em}
     .sponsors .sponsor-title span{font-size: 1em;}
     .sponsors .sponsor-title p{font-size: 0.3em;}
     .sponsors .sponsor-title .line1{width:5px;height:35px;float: left;margin-left: 1.2em;}
-    .sponsors .sponsor{margin-top: 1em;height:214px;padding:0 2em;margin: 0 1em}
+    .sponsors .sponsor{margin-top: 1em;height:auto;padding:0 2em;margin: 0 1em}
+    .sponsors .sponsor li{font-size: 0.9em}
     .sponsors .sponsor img{width:100%;height:100%;margin: 0 auto}
 }
 @media (max-width: 1200px){

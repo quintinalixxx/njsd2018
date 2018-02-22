@@ -1,17 +1,20 @@
 *{margin:0; padding:0;}
 @font-face {
     font-family: 'iconfont';  /* project id 552706 */
-    src: url('//at.alicdn.com/t/font_552706_qikmu00yt0h5xw29.eot');
-    src: url('//at.alicdn.com/t/font_552706_qikmu00yt0h5xw29.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_552706_qikmu00yt0h5xw29.woff') format('woff'),
-    url('//at.alicdn.com/t/font_552706_qikmu00yt0h5xw29.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_552706_qikmu00yt0h5xw29.svg#iconfont') format('svg');
+    src: url('//at.alicdn.com/t/font_552706_7ga6kzd2u3fmvx6r.eot');
+    src: url('//at.alicdn.com/t/font_552706_7ga6kzd2u3fmvx6r.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_552706_7ga6kzd2u3fmvx6r.woff') format('woff'),
+    url('//at.alicdn.com/t/font_552706_7ga6kzd2u3fmvx6r.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_552706_7ga6kzd2u3fmvx6r.svg#iconfont') format('svg');
 }
 body{
     padding:0;
     margin:0;
     font:small arial,sans-serif;
     font-size:16px;
+}
+body, html {
+    overflow-x: hidden;
 }
 .container {
     padding-right: 15px;
@@ -23,24 +26,36 @@ body{
 
 /*--header--*/
 #header img{width:200%;height: 200%}
-#header nav a{font-size: 1em;text-align: center;margin-top: 0.7em;color: #ffffff}
-#header nav{background: rgb(251,48,50)}
-#header ul{padding-left: 10em}
+#header nav a{font-size: 1em;text-align: center;color: #ffffff}
+#header nav a:hover{font-weight: bold;color:rgb(251,48,50) }
+#header nav{background: #000}
+#header ul{padding-left: 14em}
 #header li{font-size: 1.1em;}
-
+.register{margin:0 auto;width:30%;margin-top: -3.85em;font-size: 0.6em;float: right;margin-left: 40em}
+.register a{color: rgb(251,48,50);font-weight: bold}
+.register img{width: 60%;margin-left: 16%}
+.register .buy{background: rgb(251,48,50);width:50%;border-radius: 15px;text-align: center;font-size: 2em;padding: 0.4em 0.2em;color: #fff;margin: 0 auto}
+.register .buy a{color: #fff}
 /*---banner---*/
-.banner{padding-top: 44%;margin-top:55px;position: relative;background: url(../images/banner.jpg) no-repeat center center;background-size: 100% 100%;filter:  hue-rotate(20deg) sepia(50%) grayscale(10%)}
+.banner{padding-top: 38%;margin-top:51px;position: relative;background: url(../images/banner2.png) no-repeat center center;background-size: 100% 100%;}
 .banner h1{margin-top: -12em;text-align: center;color: #ffffff;position: relative;float: top}
 
 /*--introduce--*/
-.introduce{margin:0 auto;width:60%;margin-top: 2em;margin-bottom: 2em;}
-.introduce img{margin-left: 25%}
-.introduce a{font-size: 2em;color: #CC0000}
-.topic{}
+.introduce{margin:0 auto;width:78%;margin-top: 6em;margin-bottom: 2em;font-size: 0.6em}
+#pc_register{display: block}
+#phone_register{display:none}
+.information{font-size: 0.8em;margin-top: 30px;width: 78%;margin:0 auto;line-height: 1.8em}
+.information a{font-size: 2em;color: #1b1b1b}
+.introduce a{color: rgb(251,48,50);font-weight: bold}
+.introduce img{width: 60%;margin-left: 16%}
+.introduce .buy{background: rgb(251,48,50);width:45%;border-radius: 15px;text-align: center;font-size: 2em;padding: 0.4em 0.2em;color: #fff;margin: 0 auto}
+.introduce .buy a{color: #fff}
+.topic .video{width: 60%;margin-top: 4em;margin-left: -4em}
+.topic video{width:170%;height: 150%;}
 /*---speaker---*/
-#myCarousel .left a{ position:relative;margin-top: -6em;margin-left:-2em;text-decoration:none;float:left;color:#ffffff;font-size:50px;font-family:"iconfont" !important;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;}
+#myCarousel .left a{ position:relative;margin-top: -6em;margin-left:-2em;text-decoration:none;float:left;color:	#888;font-size:50px;font-family:"iconfont" !important;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;}
 #myCarousel .left a:hover{text-decoration:none;}
-#myCarousel .right a{ position:relative;margin-top: -6em;margin-right:-2em;text-decoration:none;float: right;color:#ffffff; font-size:50px;font-family:"iconfont" !important;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;}
+#myCarousel .right a{ position:relative;margin-top: -6em;margin-right:-2em;text-decoration:none;float: right;color:	#888; font-size:50px;font-family:"iconfont" !important;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;}
 #myCarousel .right a:hover{text-decoration:none;}
 #speaker ul{float:left}
 #speaker li{list-style-type: none;float:left;}
@@ -59,8 +74,10 @@ body{
     background-color: #f0f0f0;
     background-repeat: no-repeat;
 }
+.item{width: 100%}
 .images_item_area {padding:30px 10px;overflow:hidden;}
-.images_item {width:20%;float:left;position:relative;}
+.images_item {width:20%;float:left;position:relative;padding-left: -2em;}
+.images_item .more{display: none}
 .images_item img {width:100%;height:auto;display:block;}
 
 .item_content_area {background:rgba(104,142,179,.6);width:100%;height:100%;position:absolute;left:0;top:0;visibility:hidden;opacity:0; /*cursor:pointer;*/}
@@ -70,42 +87,34 @@ body{
 .item_content_text p {font-size:16px;color:#fff;line-height:21px;text-align:center;}
 .images_item:hover .item_content_area {visibility:visible;opacity:1;}
 
-/*----ticket----*/
-#ticket .early-bird{height:400px;width: 250px;box-shadow: 10px 10px 5px #888888;background: #9acfea;-webkit-filter: grayscale(10%); /* Chrome, Safari, Opera */filter: grayscale(10%);}
+/*----ticket
+#ticket .early-bird{height:400px;width: 250px;box-shadow: 10px 10px 5px #888888;background: rgb(251,48,50);-webkit-filter: grayscale(20%);filter: grayscale(10%);}
 #ticket .early-bird:hover{margin-top: -1.5em}
+#ticket{height: auto}
 .ticket{padding-left: 8em;height : auto;margin:4em 0}
 .ticket .early-bird p{color:#fff;padding-left: 1.5em;padding-top:1.5em;font-size:1.2em;border-bottom: 3px solid white}
 .ticket .early-bird h1{color: #fff;text-align: center;font-size:3em;margin-bottom: 3em;margin-top: 1em}
 .ticket .early-bird a{color: #fff;text-decoration:none;border: 2px solid #ffffff;border-radius:10%;padding: 1em 1.5em;margin-left: 62px;font-family:"iconfont" !important;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.5px;-moz-osx-font-smoothing: grayscale;}
-.ticket .early-bird a:hover{background-color: #fff;color: #9acfea}
-
+.ticket .early-bird a:hover{background-color: #fff;color: rgb(251,48,50)}
+----*/
+#ticket{height: auto}
+.ticket{width: 80%;margin: 0 auto;height:650px}
 /*----topic----*/
 
 .meeting_introduce{width:100%;margin: 0 auto;text-align: left;margin-top: -3em;margin-left: 3em}
 .meeting_introduce h3{margin-bottom: 1em;}
 .meeting_introduce p{margin-bottom: 4em;color: rgb(98,98,98);width: 90%;line-height: 3px}
+#mynav1{display: block}
+#mynav2{display: none}
+#arrow{display: block}
+#arrow1{display: none}
 .meeting .mynav{width: 90%;margin: 0 auto;}
 .meeting .mynav .meeting1{transition:background 1s;background: #3C3C3C;text-align: center;color: #fff;border-top: 10px solid rgb(251,48,50);height: 150px;font-weight: bold;font-size: 19px}
-.meeting .mynav .meeting1:hover{background: rgb(251,48,50);color: #ffffff}
 .meeting .mynav .meeting2{transition:background 1s;background: #3C3C3C;text-align: center;color: #fff;border-top: 10px solid rgb(251,48,50);height: 150px;font-weight: bold;font-size:19px}
-.meeting .mynav .meeting2:hover{background: rgb(251,48,50);color: #ffffff}
 .meeting .mynav .meeting3{transition:background 1s;background: #3C3C3C;text-align: center;color: #fff;border-top: 10px solid rgb(251,48,50);height: 150px;font-weight: bold;font-size:19px}
-.meeting .mynav .meeting3:hover{background: rgb(251,48,50);color: #ffffff}
 .meeting .mynav .meeting4{transition:background 1s;background: #3C3C3C;text-align: center;color: #fff;border-top: 10px solid rgb(251,48,50);height: 150px;font-weight: bold;font-size:19px}
-.meeting .mynav .meeting4:hover{background: rgb(251,48,50);color: #ffffff}
 .meeting .mynav p{padding: 3em;margin-top: -10px}
-.arrow1{
-    width: 0px;
-    height:0px;
-    line-height: 0px;
-    border-width: 12px 12px 0;
-    border-style: solid dashed dashed dashed;
-    border-color: rgb(251,48,50);
-    border-left-color: transparent;
-    border-right-color: transparent;
-    margin-top:13.2em;
-    margin-left:15em
-}
+.arrow1{width: 0px;height:0px;line-height: 0px;border-width: 12px 12px 0;border-style: solid dashed dashed dashed;border-color: rgb(251,48,50);border-left-color: transparent;border-right-color: transparent;margin-top:13.2em;margin-left:15em}
 
 .meeting #dahui1{display: block}
 .meeting #dahui2{display: none}
@@ -117,17 +126,16 @@ body{
 .feature .card{width:100%;margin: auto;color:#000000;height:auto;margin-bottom: 1.8em}
 .feature .card .card-body{height:170px;background:#ffffff;margin-top: -0.6em}
 .triangle_border_up{width:0;height:0;border-width:0 10px 10px;border-style:solid;border-color:transparent transparent rgb(247,247,247);/*透明 透明  灰*/;position:relative;margin-top:-0em;margin-right: 1.3em;float: right;}
-.feature .card .card-title{text-align: center;color: #1b1b1b;padding-top:1.5em;font-weight: bold;padding-left: 0.6em}
-.feature .card .card-text{text-align: left;height: auto;font-size: 0.8em;padding-left: 0.8em}
+.feature .card .card-title{text-align: center;color: #1b1b1b;padding-top:1.5em;font-weight: bold;padding-left: 0.6em;font-size: 1.1em}
+.feature .card .card-text{text-align: left;height: auto;font-size: 0.9em;padding-left: 0.8em;line-height: 1.9em}
 .feature img{width:100%;height: 100%;}
 .feature .icon-img{height: 100px;width: 100px;border: none}
 .feature .icon-img img{width:100%;height: 100%;filter: blur(3px);}
-.feature .icon-img1{border-radius:50%;height: 100px;width: 100px;position:relative;font-size: 4em;text-align: center;color: #fff;background:#64A600;padding-top: 0.3em;margin:0 auto}
-.feature .icon-img2{border-radius:50%;height: 100px;width: 100px;position:relative;font-size: 4em;text-align: center;color: #fff;background:#FF8040;padding-top: 0.3em;margin:0 auto}
-.feature .icon-img3{border-radius:50%;height: 100px;width: 100px;position:relative;font-size: 4em;text-align: center;color: #fff;background:#46A3FF;padding-top: 0.3em;margin:0 auto}
-.feature .icon-img4{border-radius:50%;height: 100px;width: 100px;position:relative;font-size: 4em;text-align: center;color: #fff;background:#ce8483;padding-top: 0.3em;margin:0 auto}
-
-.feature .icon-img p{position:relative;font-size: 9em;text-align: center;color: #CC0000;background:#dddddd}
+.feature .icon-img1{border-radius:50%;height: 100px;width: 100px;position:relative;font-size: 4em;text-align: center;color: #fff;background:#64A600;padding-top: 0.25em;margin:0 auto}
+.feature .icon-img2{border-radius:50%;height: 100px;width: 100px;position:relative;font-size: 4em;text-align: center;color: #fff;background:#FF8040;padding-top: 0.25em;margin:0 auto}
+.feature .icon-img3{border-radius:50%;height: 100px;width: 100px;position:relative;font-size: 4em;text-align: center;color: #fff;background:#46A3FF;padding-top: 0.25em;margin:0 auto}
+.feature .icon-img4{border-radius:50%;height: 100px;width: 100px;position:relative;font-size: 4em;text-align: center;color: #fff;background:#ce8483;padding-top: 0.25em;margin:0 auto}
+.feature .icon-img p{position:relative;font-size: 9em;text-align: center;color: #CC0000;background:#dddddd;padding-top: -0.2em}
 
 hr{height:1px;border:none;border-top:1px dashed #fff;width:90%;margin: 0 auto;margin-top: 2em;}
 
@@ -146,10 +154,10 @@ hr{height:1px;border:none;border-top:1px dashed #fff;width:90%;margin: 0 auto;ma
 .location .address li{list-style-type: none;line-height: 2em}
 .location .address{width: 80%;margin-left: 5em}
 .location .address img{width:40%;margin-left: 6em}
-.location .map{width:518px;height:410px;border:#ccc solid 1px;margin-left:3em;display:block}
+.location .map{width:518px;height:410px;border:#ccc solid 1px;margin:0 auto;display:block}
 
 /*---sponsor---*/
-#sponsor{margin-bottom: 8em}
+#sponsor{margin-bottom: 8em;}
 .sponsors {width: 90%;padding-left: 3em}
 .sponsors .sponsor-title{margin-top: 2em}
 .sponsors .sponsor-title span{font-size: 1.5em;color:#000000;letter-spacing: 3px;margin-left: 0.5em}
@@ -157,7 +165,11 @@ hr{height:1px;border:none;border-top:1px dashed #fff;width:90%;margin: 0 auto;ma
 .sponsors .sponsor-title .line1{position:relative;width:10px;height:60px;float: left;margin-left: 1.2em;box-sizing:border-box;line-height:100px;text-indent:5px;background:linear-gradient(#CC0000, #ffffff)}
 .sponsors .sponsor{margin-bottom: 3em;padding-left: 8em;height:auto}
 .sponsors .sponsor li{list-style-type: none;line-height: 2em;font-size: 1.2em}
-.sponsors .sponsor img{width:100%;height: 100%}
+
+.sponsors .sponsor_list{overflow: hidden;width: 100%}
+.sponsors .sponsor_list li{list-style-type: none;width:24%;float: left; margin-right: 1%;margin-bottom: 1%; padding-top: 9%;background: #fff; border:1px solid #ccc; position: relative}
+.sponsors .sponsor_list li img{position: absolute;max-width: 100%; max-height: 100%; left:50%;top:50%;-webkit-transform: translate(-50%,-50%)}
+.sponsors .sponsor_list li img.short{max-width: 90%; max-height: 90%;margin-left: 0.2em}
 
 
 /*--pictures--*/
@@ -193,7 +205,8 @@ hr{height:1px;border:none;border-top:1px dashed #fff;width:90%;margin: 0 auto;ma
 #bottom .row{text-align: left}
 #bottom h4{color:#ffffff;font-size: 1.3em;}
 #bottom .widget ul{margin-top: 20px;}
-#bottom .widget li{line-height: 20px;font-size:0.9em;color: rgb(164,164,164);line-height: 2em}
+#bottom .widget li{line-height: 20px;font-size:0.9em;color: rgb(164,164,164);line-height: 2em;}
+#bottom .widget li a{color: rgb(164,164,164)}
 #bottom-line {
     border: 0px solid;
     width: 100%;
@@ -214,15 +227,50 @@ hr{height:1px;border:none;border-top:1px dashed #fff;width:90%;margin: 0 auto;ma
 @media (max-width: 767px){
     #header ul{padding-left: 0em}
      #header img{width:20%;height: 20%;margin-top: 0.5em}
-    .introduce{font-size: 0.7em;width: 80%}
+    .introduce .buy{font-size: 1.3em;width: 50%}
+    .introduce{font-size: 0.7em;width: 80%;margin-top: -2em;margin-bottom: -2em}
+    #pc_register{display: none}
+    #phone_register{display: block}
+    .register{margin:0 auto;width:80%;margin-top: -3.85em;font-size: 0.6em;float: left;margin-left: 4em}
+    .register a{color: rgb(251,48,50);font-weight: bold}
+    .register img{width: 60%;margin-left: 16%}
+    .register .buy{background: rgb(251,48,50);width:50%;border-radius: 15px;text-align: center;font-size: 2em;padding: 0.4em 0.2em;color: #fff;margin: 0 auto}
+    .register .buy a{color: #fff}
+
+    .information{font-size: 0.8em;padding-top: 48px;width: 80%;margin:0 auto}
     .introduce img{margin-left: 5%;width: 80%;height: 80%;}
+    .topic{margin-top: -2em}
+    .topic .video{width: 80%;margin-top: 1em;margin-left: 10%}
+    .topic video{width:100%;height: 100%;}
+
     .images_item {width: 50% !important;}
-    .speakers_area h2 {padding: 10px 15px 10px 45px !important;font-size: 20px !important}
+    .images_item .more{display: block}
+    .speakers_area h2 {padding: 10px 15px 10px 50px !important;font-size: 20px !important;background-position: center left 15px;}
+    #myCarousel .left a{display: none}
+    #myCarousel .right a{display: none}
     /*---card---*/
-    .meeting .mynav .meeting1{border-top: 8px solid rgb(251,48,50);height: 100px;font-weight: bold;font-size:13px;margin-top: 1em}
-    .meeting .mynav .meeting2{border-top: 8px solid rgb(251,48,50);height: 100px;font-weight: bold;font-size:13px;margin-top: 1em}
-    .meeting .mynav .meeting3{border-top: 8px solid rgb(251,48,50);height: 100px;font-weight: bold;font-size:13px;margin-top: 1em}
-    .meeting .mynav .meeting4{border-top: 8px solid rgb(251,48,50);height: 100px;font-weight: bold;font-size:13px;margin-top: 1em}
+    #mynav1{display: none}
+    #mynav2{display: block;margin-top: -2em}
+    #arrow{display: none}
+    #arrow1{display: block}
+    .arrow1{width: 0px;height:0px;line-height: 0px;border-width: 12px 12px 0;border-style: solid dashed dashed dashed;border-color: rgb(251,48,50);border-left-color: transparent;border-right-color: transparent;margin-top:11.7em;margin-left:7em}
+
+    .meeting .mynav .meeting1{border-top: 8px solid rgb(251,48,50);height: 100px;font-weight: bold;font-size:13px;margin-top: 2em}
+    .meeting .mynav .meeting2{border-top: 8px solid rgb(251,48,50);height: 100px;font-weight: bold;font-size:13px;margin-top: 2em}
+    .meeting .mynav .meeting3{border-top: 8px solid rgb(251,48,50);height: 100px;font-weight: bold;font-size:13px;margin-top: 2em}
+    .meeting .mynav .meeting4{border-top: 8px solid rgb(251,48,50);height: 100px;font-weight: bold;font-size:13px;margin-top: 2em}
+
+    /*---meeting---*/
+    .line{width:20px;height:20px;visibility: hidden;margin-top: 1em}
+    .meeting_introduce{margin-top: -3em;margin-left: 2.2em;margin-bottom: -1.5em}
+    .meeting_introduce p{line-height: 2em}
+    .meeting_introduce h3{font-size: 2em}
+    .meeting_introduce h5{font-size: 1em}
+    .feature{width: 100%;margin: 0 auto;height: auto}
+    .feature .card{margin-bottom: 1.7em;height: auto;}
+    .feature .card .card-title{font-size: 1em;}
+    .feature .card .card-text{font-size: 0.7em}
+    .feature .icon-img p{position:relative;font-size: 4.6em;text-align: center;color: #fff;}
 
     .feature1{width:93%;}
     .feature1 .card1{width: 100%;height:50%;}
@@ -232,16 +280,11 @@ hr{height:1px;border:none;border-top:1px dashed #fff;width:90%;margin: 0 auto;ma
     .feature1 .card1-text span{font-size: 0.8em}
     .feature1 .card1-text p{font-size: 2px;overflow: visible}
     .triangle_border_left{border-width:10px 10px 10px 0;border-color:transparent #CC0000 transparent transparent;/*透明 灰 透明 透明 */float: left;margin-left: -0.6em;margin-top: 1.5em;position:relative;}
-    .feature .icon-img p{position:relative;font-size: 4.6em;text-align: center;color: #fff;margin-top: -80px}
     .feature1 .icon-img p{position:relative;font-size:4.5em;text-align: center;color: #fff;margin-top: -95px}
     /*----ticket-----*/
     #ticket .early-bird{height:170px;width: 110px;}
     #ticket .early-bird:hover{margin-top: -1.5em}
-    .ticket{padding-left: 0em}
-    .ticket .early-bird p{padding-left: 1.5em;padding-top:1.5em;font-size:0.5em;border-bottom: 3px solid white}
-    .ticket .early-bird h1{font-size:2em;margin-bottom: 0em;margin-bottom: 0.5em}
-    .ticket .early-bird a{border: 2px solid #fff;font-size:0.5em;border-radius:10%;margin-left: 10px;padding: 0.5em 1em;font-family:"iconfont" !important;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.5px;-moz-osx-font-smoothing: grayscale;}
-    .ticket .early-bird a:hover{background-color: #ffffff;color: #000000}
+    .ticket{width: 95%;height:100%}
 
     #pictures3{display: none}
     .picture{min-width: 400px;max-width: 500px;max-height: 280px;width: 40%;}
@@ -254,19 +297,11 @@ hr{height:1px;border:none;border-top:1px dashed #fff;width:90%;margin: 0 auto;ma
     .picture_phone .picture2{border-bottom:0.6em solid rgb(107,187,61);}
     .picture_phone .picture3{border-bottom:0.6em solid #CC0000;}
 
-    /*---meeting---*/
-    .line{width:20px;height:20px;margin-top: 1em}
-    .meeting_introduce h3{font-size: 1.5em}
-    .meeting_introduce h5{font-size: 1em}
-    .feature{width: 100%;margin: 0 auto}
-    .feature .card{margin-bottom: 1.2em}
-    .feature .card .card-title{font-size: 1.1em}
-    .feature .card .card-text{font-size: 0.6em}
-    hr{width: 100%}
+    hr{width: 100%;margin-bottom: 3em}
     .triangle_border_up{border-width:0 5px 5px;margin-top:-0.27em;margin-right: 0.85em;}
     /*----location----*/
     .location .address{width: 80%;margin-left: 2em}
-    .location .map{width:320px;height:210px;border:#ccc solid 1px;margin-left: 0em}
+    .location .map{width:320px;height:210px;border:#ccc solid 1px;margin:0 auto}
     /*----sponsor----*/
     #sponsor{margin-bottom: 5em}
     .sponsors {width: 100%;padding-left: 1em}
@@ -275,7 +310,9 @@ hr{height:1px;border:none;border-top:1px dashed #fff;width:90%;margin: 0 auto;ma
     .sponsors .sponsor-title .line1{width:5px;height:35px;float: left;margin-left: 1.2em;}
     .sponsors .sponsor{margin-top: 1em;height:auto;padding:0 2em;margin: 0 1em}
     .sponsors .sponsor li{font-size: 0.9em}
+    .sponsors .sponsor_list li{list-style-type: none;width:30%;float: left; margin-right: 3%;margin-bottom: 1%; padding-top: 16%;background: #fff; border:1px solid #ccc; position: relative}
     .sponsors .sponsor img{width:100%;height:100%;margin: 0 auto}
+    .sponsors .sponsor div{width: 30%;height: 15%;padding-top: 20px}
 }
 @media (max-width: 1200px){
     .images_item {width: 33.3% !important;}
@@ -295,13 +332,13 @@ hr{height:1px;border:none;border-top:1px dashed #fff;width:90%;margin: 0 auto;ma
     .picture_phone .picture2{border-bottom:0.6em solid rgb(107,187,61);}
     .picture_phone .picture3{border-bottom:0.6em solid #CC0000;}
 
+    .meeting .mynav p{padding: 3em;margin-top: -10px;width: 120%;margin-left: -10%}
+
     .meeting_introduce h3{font-size: 1em}
     .meeting_introduce h5{font-size: 0.8em}
-
-    .feature{width: 100%;margin: 0 auto}
-    .feature .card{margin-bottom: 1.2em}
-    .feature .card .card-title{font-size: 0.8em}
-    .feature .card .card-text{font-size: 2px}
     hr{width: 100%}
     .triangle_border_up{border-width:0 5px 5px;margin-top:-0.27em;margin-right: 0.85em;}
+}
+@media  (max-width: 375px) {
+    .location .map{width:320px;height:210px;border:#ccc solid 1px;margin-left: -1.2em}
 }

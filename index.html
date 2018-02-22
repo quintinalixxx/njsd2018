@@ -1,43 +1,1498 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <meta charset="UTF-8">
+    <title>2018 NJSD全球技术周</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="css/test2.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function(){
+            var meeting1 =document.getElementById("meeting1");
+            meeting1.style.background="rgb(251,48,50)";
+            var meeting5 =document.getElementById("meeting5");
+            meeting5.style.background="rgb(251,48,50)"
+        };
+    </script>
+
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+<!--header-->
+<header id="header">
+    <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!--<div class="col-md-1 col-xs-6">
+                    <img src="images/logo.png">
+                </div>-->
+                <div class="col-sm-6">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                </div>
+                <!--
+                <div class="register" id="phone_register">
+                    <div class="buy">
+                        <i class="iconfont">&#xe60b;</i>
+                        <a href="https://www.bagevent.com/event/1233659">注册报名</a>
+                    </div>
+                </div>-->
+                <div class="col-md-11">
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">网站主页</a></li>
+                            <li><a href="#topic">大会介绍</a></li>
+                            <li><a href="#speaker">往届嘉宾</a></li>
+                            <li><a href="#meeting">会议活动</a></li>
+                            <li><a href="#location">大会地址</a></li>
+                            <li><a href="#sponsor">主办单位</a></li>
+                            <li><a href="#picture">往届回顾</a></li>
+                            <li><a href="https://www.bagevent.com/event/1233659">注册报名</a></li>
+                            <!--
+                            <div class="register" id="pc_register">
+                                <div class="buy">
+                                    <i class="iconfont">&#xe60b;</i>
+                                    <a href="https://www.bagevent.com/event/1233659">注册报名</a>
+                                </div>
+                            </div>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header><!--/header-->
 
-  <div ng-view></div>
+<div class="banner">
+</div>
+<!-- topic -->
+<div id="topic" class="topic">
+    <div class="container">
+        <div id="tabdefault" class="speakers_area">
+            <div id="tabdefault5" class="center_content">
+                <h2 id="tabdefault6" class="extraidspace">大会简介</h2>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="introduce">
+                <div class="buy">
+                    <i class="iconfont">&#xe60b;</i>
+                    <a href="https://www.bagevent.com/event/1233659">即将开放报名</a>
+                </div>
+            </div>
+            <div class="information"><a>相</a>信我们都能切身感受到，这是一个剧变的时代！技术突飞猛进，商业风云变化。在这样的大环境下，所有的行业形态、所有的组织实体以及任何的个体、小我，都将面临着认知升级、模式转型、能力提升的种种需求或者问题。<br><br>
+                <strong>“剧变时代，全面赋能”</strong>，这是 <strong>2018全球技术周 暨第四届南京（全球）软件大会</strong>的活动主题， 我们将跟随全球软件技术的最新趋势，科技最新技术的发展速度和节奏，聚合行业最佳实践和思想，兼顾组织创新、管理方面的“软能力”和软件与科技方面的“硬技术”，全面为企业和个人提供知识的盛宴！<br><br>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="video">
+                <video src="video/njsd2017.mp4" autoplay="auto" controls="controls">
+                    your browser does not support the video tag
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <div>Angular seed app: v<span app-version></span></div>
+<div class="container">
+    <div class="speakers_area">
+        <div class="center_content">
+            <h2>往届嘉宾</h2>
+        </div>
+    </div>
+</div>
+<div id="myCarousel" class="carousel slide">
+    <div id="speaker" class="container">
+        <!-- 轮播（Carousel）指标
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+         -->
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <ul id="speaker1" style="float: left">
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/1%20驭势.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>吴甘沙 <br> 驭势科技<br>创始人兼CEO,前英特尔中国研究院院长</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/2%20Sauce%20Labs.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>Jonathan Lipps<br>Sauce Labs<br>Director,Project Lead for Appium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/3%20PingCAP.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>黄东旭<br>PingCAP<br>CTO,Codis作者</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/4%20地平线.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>杨铭<br>地平线<br>软件VP,前facebook AI实验室创始成员</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/5%20天数信息科技.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>汪远<br>天数信息科技 <br>资深研发总监</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/6%20优维科技.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>彭鲤航<br>优维科技 <br>联合创始人&COO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/7%20天猫.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>霜波<br>阿里巴巴天猫事业部 <br>技术总监</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/8%20码隆科技.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>魏颢<br>码隆科技 <br>工程副总裁</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/9%20Twitter.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>谢志勇<br>Twitter(美国)<br>技术负责人</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/10%20延云云计算.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>母延年<br>延云云计算<br> CTO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/11%20网易.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>刘超<br>网易<br>云解决方案首席架构师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/12%20京东商城.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>沈晨<br>京东商城<br>专家架构师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/13%20len%20bass.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>Len Bass博士<br>软件架构领域奠基人之一<br>《DevOps软件架构师行动指南》作者</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/14%20Netflix.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>Yunong Xiao<br>Netflix<br>Principal software engineer & Engineering leader</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/15%20uber.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>孙朝南<br>Uber<br>UberEATS技术负责人</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/16%20ThoughtWorks.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>熊节<br>ThoughtWorks<br>总监咨询师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/17%20LinkedIn.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>薛君凯博士<br>LinkedIn资深工程师<br>Apache顶级开源项目Helix的PMC和commiter</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/18%20易宝支付.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>陈斌<br>易宝支付CTO <br>前eBay/PayPal资深架构师,《架构即未来》译者</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/19%20特赞.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>黄勇<br>特赞CTO<br>《架构探险》作者</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/20%20南京物联传感.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>仇剑东<br>南京物联传感 <br>软件副总裁</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <div class="more">
+                            <img width="512" height="280" src="images/speaker/more1.jpg">
+                            <div class="item_content_area">
+                                <div class="item_content">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <ul id="speaker2" style="float: left">
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/21%20饿了么.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>史海峰<br>饿了么<br>北京研发中心总经理</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/22%20阿里巴巴.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>王万林<br>阿里巴巴<br>人工智能实验室高级专家</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/23%20小米.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>孙寅<br>小米<br>资深架构师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/24%20膜拜.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>郑长帅<br>摩拜单车<br>架构师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/25%20烽火科技.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>王胤然<br>烽火通信<br> 首席大数据架构师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/37%20ThoughtWorks.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>刘传湘<br>ThoughtWorks<br>总监咨询师，中国区能力建设负责人</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/38%20中兴通讯.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>刘通博<br>中兴通讯<br>DevOps架构组组长</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/26%20千米.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>曹祖鹏<br>千米网 <br>首席架构师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/27%20当当.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>张亮<br>当当网 <br> 首席架构师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/28%20途牛.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>赵国光<br>途牛旅游网 <br>首席架构师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/29%2058到家.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>胡显波<br>58到家 <br>后端架构负责人</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/30%20英特尔.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>许炜华<br>英特尔亚太研发中心<br>技术专家</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/31%20科大讯飞.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>程坤<br>科大讯飞<br> 应用研发五部经理</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/32%20ThoughtWorks.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>笪磊<br>ThoughtWorks <br> 资深咨询师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/33%20中兴.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>刘通博<br>中兴通讯 <br>DevOps架构组组长</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/34%20华泰证券.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>管文琦<br>华泰证券 <br>华泰容器云负责人、高级架构师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/35%20炫彩互动.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>韩玮<br>炫彩互动网络科技<br>Android开发主管</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/36%20明略数据.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>李克伟<br>明略数据 <br>架构师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/39%20找钢网.jpg">
+                        <div class="item_content_area">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>刘星辰<br>找钢网 <br>资深架构师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <img width="512" height="280" src="images/speaker/40%20才云科技.jpg">
+                        <div class="item_content_area item_content_area2">
+                            <div class="item_content">
+                                <div class="item_content_text">
+                                    <p>任玉泉<br>才云科技CaiCloud <br>云开源工程师，kubernetes社区member</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="images_item">
+                        <div class="more">
+                            <img width="512" height="280" src="images/speaker/more1.jpg">
+                            <div class="item_content_area">
+                                <div class="item_content">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel-control left" href="#myCarousel"
+           data-slide="prev">
+        </a>
+        <a class="carousel-control right" href="#myCarousel"
+           data-slide="next">
+        </a>
+        <div class="left"><a href="#myCarousel" data-slide="prev">&#xe668;</a></div>
+        <div class="right"><a href="#myCarousel" data-slide="next">&#xe669;</a></div>
+    </div>
+</div>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+
+<!--starts speaker-->
+<!--<div id="speaker">
+    <div class="prev1" id="prev"><i>&#xe628;</i></div>
+    <div class="container">
+        <div class="speakers_area">
+            <div class="center_content">
+                <h2>往届嘉宾</h2>
+            </div>
+    </div>
+    <div class="next1" id="next"><i>&#xe627;</i></div>
+</div><!--/speaker-->
+
+<!--topic-->
+<div class="meeting" id="meeting">
+    <div class="container">
+        <div id="tabdefault2" class="speakers_area">
+            <div id="tabdefault3" class="center_content">
+                <h2 id="tabdefault4" class="extraidspace">本届技术周活动安排 <small>（持续更新中...）</small></h2>
+            </div>
+        </div>
+        <div class="mynav" id="mynav1">
+            <div class="col-lg-3 col-md-3 col-xs-6"><div class="meeting1" id="meeting1" name="meeting" onclick="changeMeeting(this)"><p>互联网创新能力大会</p></div></div>
+            <div class="col-lg-3 col-md-3 col-xs-6"><div class="meeting2" id="meeting2" name="meeting" onclick="changeMeeting(this)"><p>全球软件与科技大会</p></div></div>
+            <div class="col-lg-3 col-md-3 col-xs-6"><div class="meeting3" id="meeting3" name="meeting" onclick="changeMeeting(this)"><p>全球技术周技术酒会</p></div></div>
+            <div class="col-lg-3 col-md-3 col-xs-6"><div class="meeting4" id="meeting4" name="meeting" onclick="changeMeeting(this)"><p>深度培训工作坊</p></div></div>
+        </div>
+
+        <div class="mynav" id="mynav2">
+            <div class="col-lg-3 col-md-3 col-xs-6"><div class="meeting1" id="meeting5" name="meeting" onclick="changeMeeting1(this)"><p>互联网创新能力大会</p></div></div>
+            <div class="col-lg-3 col-md-3 col-xs-6"><div class="meeting2" id="meeting6" name="meeting" onclick="changeMeeting1(this)"><p>全球软件与科技大会</p></div></div>
+            <div class="col-lg-3 col-md-3 col-xs-6"><div class="meeting3" id="meeting7" name="meeting" onclick="changeMeeting1(this)"><p>全球技术周技术酒会</p></div></div>
+            <div class="col-lg-3 col-md-3 col-xs-6"><div class="meeting4" id="meeting8" name="meeting" onclick="changeMeeting1(this)"><p>深度培训工作坊</p></div></div>
+        </div>
+        <div class="arrow1" id="arrow" name="arrow"></div>
+        <div class="arrow1" id="arrow1" name="arrow"></div>
+        <hr>
+        <div class="feature" id="dahui1" name="dahui">
+            <div class="line"></div>
+            <div class="meeting_introduce">
+                <h3>互联网创新能力大会</h3>
+                <p><strong>时间：</strong>5月19日&nbsp&nbsp&nbsp<strong>地点：</strong>南京国际博览中心</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img1">
+                        <p class="iconfont">&#xe7a2;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">创新与思维突破</h4>
+                        <p class="card-text">
+                            创新的关键在于认知上的突破，互联网行业中有很多可以借鉴的"高级思维"，譬如工程师思维、第一性原理、降维攻击、生物进化隐喻等
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img2">
+                        <p class="iconfont">&#xe640;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">行业创新应用</h4>
+                        <p class="card-text">新技术革命、消费升级、产业互联网等趋势红利正在加速行业创新，以新零售、无人货架等为代表的智能+、互联网+的新物种层出不穷
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img3">
+                        <p class="iconfont">&#xe604;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">客户运营与增长</h4>
+                        <p class="card-text">
+                            天使用户的获取，超级用户的留存，存量用户的增值运营等都是运营工作的日常命题，涉及最新的互联网运营实战经验
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img4">
+                        <p class="iconfont">&#xe619;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">小程序应用</h4>
+                        <p class="card-text">
+                            腾讯的野心是想用小程序赋能新的商业场景。这场大戏才刚刚开始，未来会有更多企业将小程序内嵌为场景的标配，它必将成为一个商业连接的利器
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img1">
+                        <p class="iconfont">&#xe654;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">激活团队</h4>
+                        <p class="card-text">
+                            团队持续的战斗力和执行力，团队的稳定性，有效的沟通和协作，整体创新能力等，是团队leader或公司创始人一直要面要对的问题
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img2">
+                        <p class="iconfont">&#xe614;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">项目投融资分享</h4>
+                        <p class="card-text">
+                            投资人的眼光总是很独到的，成功融资的创始人必然具有心得体会。在科技领域，资本是推动产业发展和创新突破的基础，不可或缺
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img3">
+                        <p class="iconfont">&#xe63e;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">小米生态链创新</h4>
+                        <p class="card-text">
+                            小米是商业史上的一个奇迹，在短短几年时间内，小米生态链的企业已经占据了互联网的半壁江山，而小米系的产品也正在逐步渗透我们的生活
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <HR>-->
+
+        <div class="feature" id="dahui2" name="dahui">
+            <div class="line"></div>
+            <div class="meeting_introduce">
+                <h3>全球软件与科技大会</h3>
+                <p><strong>时间：</strong>5月20、21日&nbsp&nbsp&nbsp<strong>地点：</strong>南京国际博览中心</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img1">
+                        <p class="iconfont">&#xe641;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">主旨演讲：赋能时代</h4>
+                        <p class="card-text">
+                            大佬和大神们对时代的最新诠释，技术趋势的洞察，行业红利的发掘，赋能赋予未来各种可能
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img2">
+                        <p class="iconfont">&#xe66b;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">智能时代的技术架构</h4>
+                        <p class="card-text">
+                            面向智能应用的场景，技术架构上的设计实现，也涉及云计算、流处理与实时计算、K8S/Mesos等基础架构
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img3">
+                        <p class="iconfont">&#xe6ba;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">大数据处理与运营</h4>
+                        <p class="card-text">
+                            数据资产的充分利用和价值挖掘对于已有数据积累的公司是一项重要的挑战，也是业务获得突破的机会，涉及数据清洗、分析利用、治理、运营等
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img4">
+                        <p class="iconfont">&#xe623;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">前端技术趋势</h4>
+                        <p class="card-text">
+                            从前端技术到体验科技，到智能交互，前端技术越来越丰富，它必将成为商业表现和客户界面中最重要的一环。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img1">
+                        <p class="iconfont">&#xe61a;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">开发语言与工具</h4>
+                        <p class="card-text">
+                            随着行业热点的变化，我们对语言和工具的追随和研究也在逐步变化，更具工程效率、更符合场景开发的，也更容易成为我们的选择
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img2">
+                        <p class="iconfont">&#xe7e7;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">DevOps与运维智能</h4>
+                        <p class="card-text">
+                            DevOps已经被业内达成价值上的共识，持续交付及商业上精益式的探索将成为我们的基础能力，同时运维+AI也是当前AI落地的一个重要场景
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img3">
+                        <p class="iconfont">&#xe60a;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">高峰论坛：智能落地</h4>
+                        <p class="card-text">
+                            主题演讲围绕AI如何落地，所需的要素禀赋，合适的应用场景，可参考的案例等
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img4">
+                        <p class="iconfont">&#xe634;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">业务智能案例</h4>
+                        <p class="card-text">
+                            企业业务融入智能技术，挖掘更多的客户价值，更加彰显技术驱动业务的理念，汇聚行业先锋实践案例，亦或跨越领域边界获得启发
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img1">
+                        <p class="iconfont">&#xe62e;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">人工智能和机器学习实践</h4>
+                        <p class="card-text">
+                            AI/ML技术的实践分享，深度学习、迁移学习、增强学习等，Deep Learning框架应用、模型优化、创新解决方案等
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img2">
+                        <p class="iconfont">&#xe6e2;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">企业AI能力开放专场</h4>
+                        <p class="card-text">
+                            企业AI平台能力，开放技术，开源项目，开发者社区，生态建设等
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img3">
+                        <p class="iconfont">&#xe662;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">智能物联</h4>
+                        <p class="card-text">
+                            随着5G的到来，互联网技术的渗透，AI的兴起，智能硬件开始层出不穷，智能家电、智能出行、安防、新零售等行业开始蓬勃发展
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img4">
+                        <p class="iconfont">&#xe764;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">区块链创新</h4>
+                        <p class="card-text">
+                            区块链是冰火两重天：一面是风声鹤唳的泡沫论，一面是颠覆行业的技术革命论。但无论如何，技术总会不断进步，而这些力量来源于技术的先见者
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img1">
+                        <p class="iconfont">&#xec76;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">工业互联网</h4>
+                        <p class="card-text">
+                            产业互联网是互联网的下半场，互联网+的大潮已经让工业界加速关注，工业互联网平台、大数据应用、SaaS服务、工业4.0概念等开始落地
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature" id="dahui3" name="dahui">
+            <div class="line"></div>
+            <div class="meeting_introduce">
+                <h3>全球技术周技术酒会</h3>
+                <p><strong>时间：</strong>5月20日晚上&nbsp&nbsp&nbsp<strong>地点：</strong>南京国际博览中心</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img1">
+                        <p class="iconfont">&#xe651;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">技术领袖论坛</h4>
+                        <p class="card-text">
+                            技术领导力，技术管理及技术团队建设，技术驱动业务增长，创新环境，创新能力等
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img2">
+                        <p class="iconfont">&#xe68e;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">VIP技术酒会</h4>
+                        <p class="card-text">
+                            与技术嘉宾近距离交流，与领域内朋友们同桌交换经验，共谈未来、共同进步，美酒佳肴+思想碰撞
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img3">
+                        <p class="iconfont">&#xe624;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">最佳实践案例颁奖</h4>
+                        <p class="card-text">
+                            TOP10优秀实践案例颁奖仪式
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="feature" id="dahui4" name="dahui">
+            <div class="line"></div>
+            <div class="meeting_introduce">
+                <h3>会后深度培训</h3>
+                <p><strong>时间：</strong>5月22、23日&nbsp&nbsp&nbsp<strong>地点：</strong>南京国际博览中心</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img1">
+                        <p class="iconfont">&#xec72;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">TensorFlow与深度学习</h4>
+                        <p class="card-text">
+                            深度学习必备知识,神经网络模型和神经网络案例实战，TensorFlow实战自然语言处理-Word2Vec，深度学习顶级论文算法详解等
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img2">
+                        <p class="iconfont">&#xe9d5;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">微服务架构</h4>
+                        <p class="card-text">
+                            微服务架构开发及架构原则，包括用SpringBoot搭建开发框架，用Node.js搭建网关，用ZooKeeper实现服务注册与发现，Docker封装及部署等
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="card">
+                    <div class="icon-img3">
+                        <p class="iconfont">&#xe618;</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">区块链开发</h4>
+                        <p class="card-text">
+                            区块链基本原理,区块链架构,区块链应用场景,钱包使用与安全,GPU多显卡挖矿,分叉原理与案例，智能合约开发，源码深度分析等
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <HR>-->
+<!--
+        <div class="feature1" id="dahui3">
+            <div class="line"></div>
+            <div class="meeting_introduce">
+                <h3>全球技术周技术酒会</h3>
+                <h5>攻与防之间的博弈一刻也没有停止过，无论是实现思路还是技术方法，都在不断升级，不停突破。技术论坛将从不同角度出发，揭秘最高深的安全风险，分享最前沿的研究成果，探讨最有效的解决方法。</h5>
+            </div>
+            <div class="card1">
+                <div class="icon-img">
+                    <img src="images/icon-img.jpg">
+                    <p class="iconfont">&#xe63f;</p>
+                </div>
+                <div class="card1-text">
+                    <span>技术领袖论坛</span>
+                    <p>蒸汽机释放人的双手本生活诉求.蒸汽机释放人的双手，电电力解决基本生活诉求.蒸汽机释放人的双手电力解决基本生活诉求.蒸汽机释放人的双手力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求.</p>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="icon-img">
+                    <img src="images/icon-img.jpg">
+                    <p class="iconfont">&#xe7a2;</p>
+                </div>
+                <div class="card1-text">
+                    <span>自由交流酒会</span>
+                    <p>蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求.</p>
+                </div>
+            </div>
+            <div class="card1" style="margin-top: 2em">
+                <div class="icon-img">
+                    <img src="images/icon-img.jpg">
+                    <p class="iconfont">&#xe666;</p>
+                </div>
+                <div class="card1-text">
+                    <span>VIP晚宴</span>
+                    <p>蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求蒸汽机释放人的双手电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求..</p>
+                </div>
+            </div>
+            <div class="card2" style="margin-top: 2em">
+                <div class="icon-img">
+                    <img src="images/icon-img.jpg">
+                    <p class="iconfont">&#xe609;</p>
+                </div>
+                <div class="card1-text">
+                    <span>优秀嘉宾颁奖</span>
+                    <p>蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求..</p>
+                </div>
+            </div>
+        </div>
+-->
+       <!-- <HR>-->
+<!--
+        <div class="feature1" id="dahui4">
+            <div class="line"></div>
+            <div class="meeting_introduce">
+                <h3>会后深度培训</h3>
+                <h5>攻与防之间的博弈一刻也没有停止过，无论是实现思路还是技术方法，都在不断升级，不停突破。技术论坛将从不同角度出发，揭秘最高深的安全风险，分享最前沿的研究成果，探讨最有效的解决方法。</h5>
+            </div>
+            <div class="card1">
+                <div class="icon-img">
+                    <img src="images/icon-img.jpg">
+                    <p class="iconfont">&#xe609;</p>
+                </div>
+                <div class="card1-text">
+                    <span>深度学习</span>
+                    <p>蒸汽机释放人的双手，电力解决生活诉求.蒸汽机释放人的双手电力解决基本生活诉求.电力解决生活诉求.蒸汽机释放人的双手电力解决基本生活诉求.蒸汽机释放人的双手力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求.</p>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="icon-img">
+                    <img src="images/icon-img.jpg">
+                    <p class="iconfont">&#xe620;</p>
+                </div>
+                <div class="card1-text">
+                    <span>服务架构与领域驱动开发</span>
+                    <p>蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求.</p>
+                </div>
+            </div>
+            <div class="card1" style="margin-top: 2em">
+                <div class="icon-img">
+                    <img src="images/icon-img.jpg">
+                    <p class="iconfont">&#xe6ac;</p>
+                </div>
+                <div class="card1-text">
+                    <span>测试架构师</span>
+                    <p>蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求蒸汽机释放人的双手电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求..</p>
+                </div>
+            </div>
+            <div class="card2" style="margin-top: 2em">
+                <div class="icon-img">
+                    <img src="images/icon-img.jpg">
+                    <p class="iconfont">&#xe626;</p>
+                </div>
+                <div class="card1-text">
+                    <span>敏捷项目管理</span>
+                    <p>蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求蒸汽机释放人的双手，电力解决基本生活诉求.蒸汽机释放人的双手电力解决基本生活诉求.蒸汽机释放人的双手，电力解决基本生活诉求..</p>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</div>
+
+<div class="location" id="location">
+    <div class="container">
+        <div class="speakers_area">
+            <div class="center_content">
+                <h2 class="extraidspace">会议地点</h2>
+            </div>
+        </div>
+        <div class="address">
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <ul>
+                    <li><strong>地点：</strong>国际博览会议中心（建邺区白龙江西街6号 国际博览中心内）</li>
+                    <li><strong>交通</strong>：地铁10号线，元通站4号出口</li>
+                    <br>
+                    <li>具体参会向导请阅读微信公众号上的指南，搜“NJSD全球软件大会”</li>
+                    <li><img src="images/gongzhonghao.jpeg"/></li>
+                    <br>
+                    <li><a href="#"  target=_blank style = "color: #5c5c5c;text-decoration:underline;">下载会议通知</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="map" id="dituContent"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--ticket
+<div id="ticket">
+    <div class="container">
+        <div class="row">
+            <div class="speakers_area">
+                <div class="center_content">
+                    <h2 class="extraidspace">购票</h2>
+                </div>
+            </div>
+            <div class="ticket">
+                <div class="col-lg-4 col-md-4 col-xs-4">
+                    <div class="early-bird">
+                        <p>早鸟票<br>EARLY BIRD</p>
+                        <h1>¥ 528</h1>
+                        <a>&#xe602;马上购票</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-4">
+                    <div class="early-bird">
+                        <p>早鸟票<br>EARLY BIRD</p>
+                        <h1>¥ 528</h1>
+                        <a>&#xe602;马上购票</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-4">
+                    <div class="early-bird">
+                        <p>早鸟票<br>EARLY BIRD</p>
+                        <h1>¥ 528</h1>
+                        <a>&#xe602;马上购票</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!--
+<div id="ticket">
+    <div class="container">
+        <div class="speakers_area">
+            <div class="center_content">
+                <h2 class="extraidspace">票务信息</h2>
+            </div>
+        </div>
+        <div class="ticket">
+            <iframe id="promote_ticket_iframe" width="100%" height="100%" src="http://www.bagevent.com/widget/ticket/1233659?widget=2" frameborder="0" scrolling="1"></iframe>
+        </div>
+    </div>
+</div>
+-->
+<!--/topic-->
+<div id="sponsor">
+    <div class="container">
+        <div class="speakers_area">
+            <div class="center_content">
+                <h2 class="extraidspace">组织方</h2>
+            </div>
+        </div>
+        <div class="sponsors">
+            <div class="sponsor-title">
+                <a class="line1"></a>
+                <span>主办单位</span><br>
+                <p>ORGANIZE COMPANY</p>
+            </div>
+            <div class="sponsor">
+                <ul>
+                    <li>全球技术周组委会</li>
+                </ul>
+                    <!--<div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/2.jpg">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/1.jpg">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/3.jpg">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/4.jpg">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/2.jpg">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/3.jpg">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/4.jpg">
+                    </div>-->
+            </div>
+        </div>
+
+        <div class="sponsors">
+            <div class="sponsor-title">
+                <a class="line1"></a>
+                <span>指导单位</span><br>
+                <p>GUIDANCE COMPANY</p>
+            </div>
+            <div class="sponsor">
+                <ul>
+                    <li>江苏省经济和信息化委员会</li>
+                    <li>南京市贸促会</li>
+                </ul>
+                    <!--<div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/2.jpg">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/1.jpg">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/3.jpg">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/4.jpg">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/2.jpg">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/3.jpg">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <img src="images/sponsor/4.jpg">
+                    </div>-->
+            </div>
+        </div>
+        <div class="sponsors">
+            <div class="sponsor-title">
+                <a class="line1"></a>
+                <span>支持单位</span><br>
+                <p>SUPPORT COMPANY</p>
+            </div>
+            <div class="sponsor">
+                <ul class="sponsor_list">
+                    <li><img src="images/sponsor/1-软件谷.jpg"></li>
+                    <li><img src="images/sponsor/2-协同创新中心.jpg"></li>
+                    <li><img src="images/sponsor/3-计算机学会.png"></li>
+                    <li><img src="images/sponsor/4-NJU.jpg" class="short"></li>
+                    <li><img src="images/sponsor/5-JICIA.png"></li>
+
+                    <li><img src="images/sponsor/6-ccf.jpg"></li>
+                    <li><img src="images/sponsor/7-BIGDATA.jpg"></li>
+                    <li><img src="images/sponsor/8-gdgnj.jpg"></li>
+                    <li><img src="images/sponsor/12-suning.jpg"></li>
+                    <li><img src="images/sponsor/14-xianxia.png"></li>
+                    <li><img src="images/sponsor/15-itdk.jpg"></li>
+                    <li><img src="images/sponsor/16-easier.png"></li>
+                    <li><img src="images/sponsor/17-logo_index.png"></li>
+                    <li><img src="images/sponsor/18-devops.png"></li>
+                    <li><img src="images/sponsor/19-SKUNKLAB.jpg"></li>
+                    <li><img src="images/sponsor/20-sponsor4.png"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sponsors">
+            <div class="sponsor-title">
+                <a class="line1"></a>
+                <span>承办单位及票务网站</span><br>
+                <p>UNDERTAKE COMPANY</p>
+            </div>
+            <div class="sponsor">
+                <ul>
+                    <li>南京莺之飞信息技术有限公司</li>
+                    <li>百格活动网（独家票务网站）</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--pictures-->
+<div id="picture">
+    <div id="picture_phone" class="picture_phone">
+        <div class="col-lg-6 col-md-12 col-xs-12">
+            <div class="picture1">
+                <img src="images/picture/review1.jpg">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-xs-6">
+            <div class="picture2">
+                <img src="images/picture/review7.jpg" style="border-bottom:0.6em solid rgb(253,183,55)">
+                <img src="images/picture/review3.jpg" style="margin-top: 0.65em">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-xs-6">
+            <div class="picture3">
+                <img src="images/picture/review4.jpg" style="border-bottom:0.6em solid rgb(40,81,135)">
+                <img src="images/picture/review8.jpg" style="margin-top: 0.65em;">
+            </div>
+        </div>
+    </div>
+    <div class="total_picture">
+        <div id="pictures" class="pictures1">
+            <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="picture picture1">
+                    <img src="images/picture/review1.jpg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-6">
+                <div class="picture picture2">
+                    <img src="images/picture/review7.jpg" style="border-bottom:0.6em solid rgb(253,183,55)">
+                    <img src="images/picture/review3.jpg" style="margin-top: 0.65em">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-6">
+                <div class="picture picture3">
+                    <img src="images/picture/review4.jpg" style="border-bottom:0.6em solid rgb(40,81,135)">
+                    <img src="images/picture/review8.jpg" style="margin-top: 0.65em">
+                </div>
+            </div>
+        </div>
+        <!--<div id="pictures2" class="pictures2">
+            <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="picture2">
+                    <img src="images/picture/review9.jpg" style="margin-top: 0.9em">
+                    <img src="images/picture/review5.jpg" style="margin-top: 0.9em">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-6">
+                <div class="picture1">
+                    <img src="images/picture/review11.jpg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="picture3">
+                    <img src="images/picture/review12.jpg" style="margin-top: 0.9em">
+                    <img src="images/picture/review13.jpg" style="margin-top: 0.9em">
+                </div>
+            </div>
+        </div>-->
+        <div id="pictures3" class="pictures3">
+            <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="picture picture1">
+                    <img src="images/picture/review2.jpg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="picture picture2">
+                    <img src="images/picture/review6.jpg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="picture picture3">
+                    <img src="images/picture/review13.jpg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-3">
+                <div class="picture picture4">
+                    <img src="images/picture/review9.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="bottom">
+    <div class="row">
+        <div class="container">
+            <div class="bottom">
+                <div class="col-md-4 col-xs-12">
+                    <ul class="widget">
+                        <h4>大会合作</h4>
+                        <li>联系人：任老师、王老师</li>
+                        <li>手机：133-8208-1768、177-0158-3565</li>
+                        <li>微信：nii2011、NJSDMsWang</li>
+                        <li>mail：qren2000@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <ul class="widget">
+                        <h4>往届回顾</h4>
+                        <li><a href="http://njsd-china.org/IAS2017/">IAS  2017</a></li>
+                        <li><a href="http://njsd-china.org/njsd2017/">NJSD 2017</a></li>
+                        <li><a href="http://njsd-china.org/njsd2016/">NJSD 2016</a></li>
+                        <li><a href="http://njsd-china.org/njsd2015/">NJSD 2015</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div ><hr id="bottom-line"></div>
+        </div>
+    </div>
+</div>
+<!--footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <a style="color:#6C6C6C"  href="http://www.miitbeian.gov.cn">苏备：ICP-14002894－11</a>
+            </div>
+            <div class="col-sm-6">
+                <a style="color:#6C6C6C">版权所有：南京慕测信息科技有限公司</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script src="js/map.js"></script>
+<script>
+    function changeMeeting(obj) {
+        var meeting = ["meeting1","meeting2","meeting3","meeting4"];
+        var dahui=["dahui1","dahui2","dahui3","dahui4"];
+        var arrow=document.getElementById("arrow");
+        var dahuiId1=document.getElementById("dahui3");
+        var dahuiId2=document.getElementById("dahui4");
+        var thisid=obj.id;
+        if(thisid=="meeting1")
+            arrow.style.marginLeft="15em";
+        else if(thisid=="meeting2")
+            arrow.style.marginLeft="31em";
+        else if(thisid=="meeting3")
+        {
+            arrow.style.marginLeft="47em";
+            dahuiId1.style.marginTop="-2em";
+        }
+        else
+        {
+            arrow.style.marginLeft="63em";
+            dahuiId2.style.marginTop="-2em";
+        }
+        var dahuiId="dahui"+thisid.split("meeting")[1];
+        for(var i = 0, l = dahui.length; i <l; i++) {
+            var objTemp = dahui[i];
+            var obj = document.getElementById(objTemp);
+            if(objTemp!=dahuiId)
+                obj.style.display="none";
+            else
+                obj.style.display="block";
+        }
+        for(var i=0,l=meeting.length;i<l;i++){
+            var objTemp = meeting[i];
+            var obj=document.getElementById(objTemp);
+            if(thisid==objTemp){
+                obj.style.background="rgb(251,48,50)";
+            }
+            else
+                obj.style.background="#3C3C3C";
+        }
+    }
+    function changeMeeting1(obj) {
+        var meeting = ["meeting5","meeting6","meeting7","meeting8"];
+        var dahui=["dahui1","dahui2","dahui3","dahui4"];
+        var arrow=document.getElementById("arrow1");
+        var dahuiId1=document.getElementById("dahui3");
+        var dahuiId2=document.getElementById("dahui4");
+        var thisid=obj.id;
+        if(thisid=="meeting5"){
+            arrow.style.marginTop="11.7em";
+            arrow.style.marginLeft="7em";
+        }
+        else if(thisid=="meeting6"){
+            arrow.style.marginTop="11.7em";
+            arrow.style.marginLeft="18em";
+        }
+        else if(thisid=="meeting7"){
+            arrow.style.marginTop="19.55em";
+            arrow.style.marginLeft="7em";
+            dahuiId1.style.marginTop="-2.4em";
+        }
+        else{
+            arrow.style.marginTop="19.55em";
+            arrow.style.marginLeft="18em";
+            dahuiId2.style.marginTop="-2.4em";
+        }
+        var meetingId =thisid.split("meeting")[1]-4;
+        var dahuiId="dahui"+meetingId;
+        for(var i = 0, l = dahui.length; i <l; i++) {
+            var objTemp = dahui[i];
+            var obj = document.getElementById(objTemp);
+            if(objTemp!=dahuiId)
+                obj.style.display="none";
+            else
+                obj.style.display="block";
+        }
+        for(var i=0,l=meeting.length;i<l;i++){
+            var objTemp = meeting[i];
+            var obj=document.getElementById(objTemp);
+            if(thisid==objTemp){
+                obj.style.background="rgb(251,48,50)";
+            }
+            else
+                obj.style.background="#3C3C3C";
+        }
+    }
+
+
+</script>
 </body>
 </html>
